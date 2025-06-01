@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mithlesh Prasad | Full Stack Developer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <style>
+        :root {
+            --primary: #0d6efd;
+            --dark: #212529;
+            --light: #f8f9fa;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            scroll-behavior: smooth;
+        }
+        .hero {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 5rem 0;
+        }
+        .skill-badge {
+            margin: 0.3rem;
+            transition: transform 0.3s;
+        }
+        .skill-badge:hover {
+            transform: scale(1.05);
+        }
+        .project-card {
+            transition: transform 0.3s, box-shadow 0.3s;
+            height: 100%;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .iframe-container {
+            position: relative;
+            overflow: hidden;
+            padding-top: 56.25%;
+            margin-bottom: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .iframe-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        .nav-pills .nav-link.active {
+            background-color: var(--primary);
+        }
+        footer {
+            background-color: var(--dark);
+            color: white;
+        }
+        .timeline {
+            position: relative;
+            padding-left: 50px;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 20px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--primary);
+        }
+        .timeline-item {
+            position: relative;
+            margin-bottom: 30px;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -40px;
+            top: 5px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: var(--primary);
+            border: 3px solid white;
+        }
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+            z-index: 99;
+        }
+    </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar">
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Mithlesh Prasad</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero text-center">
+        <div class="container">
+            <img src="https://via.placeholder.com/150" alt="Profile" class="rounded-circle mb-4" style="width: 150px; height: 150px; object-fit: cover;">
+            <h1 class="display-4 fw-bold">Mithlesh Prasad</h1>
+            <p class="lead">Full Stack Developer | Competitive Programmer | Tech Enthusiast</p>
+            <div class="d-flex justify-content-center gap-3 mt-4">
+                <a href="https://www.linkedin.com/in/mithlesh-prasad-5a68a41a3/" class="btn btn-outline-light btn-lg">LinkedIn</a>
+                <a href="https://github.com/mithleshprasad" class="btn btn-outline-light btn-lg">GitHub</a>
+                <a href="#contact" class="btn btn-primary btn-lg">Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">About Me</h2>
+            <div class="row">
+                <div class="col-lg-6">
+                    <p class="lead">Hi, I'm Mithlesh Prasad, a passionate Full Stack Developer based in Bihar, India.</p>
+                    <p>With over 2 years of development experience, I specialize in building scalable web applications using modern technologies. I'm currently expanding my expertise in advanced system design to create even more robust solutions.</p>
+                    <p>When I'm not coding, you can find me solving problems on competitive programming platforms or contributing to open-source projects.</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Quick Facts</h5>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <span>Location</span>
+                                    <span class="badge bg-primary">Bihar, India</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <span>Experience</span>
+                                    <span class="badge bg-primary">2+ Years</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <span>Current Focus</span>
+                                    <span class="badge bg-primary">System Design</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <span>CodeChef Rating</span>
+                                    <span class="badge bg-primary">3⭐ (1603)</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <span>LeetCode Rating</span>
+                                    <span class="badge bg-primary">1462 (Top 8k)</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Technical Skills</h2>
+            
+            <div class="mb-5">
+                <h4 class="mb-3">Frontend</h4>
+                <div class="d-flex flex-wrap">
+                    <span class="skill-badge badge bg-primary p-2">React</span>
+                    <span class="skill-badge badge bg-primary p-2">Redux</span>
+                    <span class="skill-badge badge bg-primary p-2">JavaScript (ES6+)</span>
+                    <span class="skill-badge badge bg-primary p-2">HTML5</span>
+                    <span class="skill-badge badge bg-primary p-2">CSS3</span>
+                    <span class="skill-badge badge bg-primary p-2">Bootstrap</span>
+                    <span class="skill-badge badge bg-primary p-2">Webpack</span>
+                    <span class="skill-badge badge bg-primary p-2">Figma</span>
+                </div>
+            </div>
+            
+            <div class="mb-5">
+                <h4 class="mb-3">Backend</h4>
+                <div class="d-flex flex-wrap">
+                    <span class="skill-badge badge bg-success p-2">Node.js</span>
+                    <span class="skill-badge badge bg-success p-2">Express.js</span>
+                    <span class="skill-badge badge bg-success p-2">MongoDB</span>
+                    <span class="skill-badge badge bg-success p-2">MySQL</span>
+                    <span class="skill-badge badge bg-success p-2">Firebase</span>
+                    <span class="skill-badge badge bg-success p-2">Socket.io</span>
+                    <span class="skill-badge badge bg-success p-2">WebRTC</span>
+                </div>
+            </div>
+            
+            <div class="mb-5">
+                <h4 class="mb-3">Programming Languages</h4>
+                <div class="d-flex flex-wrap">
+                    <span class="skill-badge badge bg-info p-2">JavaScript</span>
+                    <span class="skill-badge badge bg-info p-2">C++</span>
+                    <span class="skill-badge badge bg-info p-2">Python</span>
+                </div>
+            </div>
+            
+            <div class="mb-5">
+                <h4 class="mb-3">Tools & DevOps</h4>
+                <div class="d-flex flex-wrap">
+                    <span class="skill-badge badge bg-warning text-dark p-2">Git</span>
+                    <span class="skill-badge badge bg-warning text-dark p-2">AWS</span>
+                    <span class="skill-badge badge bg-warning text-dark p-2">Heroku</span>
+                    <span class="skill-badge badge bg-warning text-dark p-2">Firebase</span>
+                    <span class="skill-badge badge bg-warning text-dark p-2">Postman</span>
+                    <span class="skill-badge badge bg-warning text-dark p-2">VS Code</span>
+                    <span class="skill-badge badge bg-warning text-dark p-2">Chai</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Work Experience</h2>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h4>Full Stack Developer</h4>
+                    <h5>A2 Technosoft</h5>
+                    <p class="text-muted">Dec 2024 - Present</p>
+                    <ul>
+                        <li>Developed comprehensive admin dashboards for financial transaction management</li>
+                        <li>Optimized backend queries and frontend rendering for improved performance</li>
+                        <li>Enhanced security with JWT authentication and role-based access control</li>
+                        <li>Technologies: React.js, Node.js, Express, MongoDB, RESTful APIs, JWT, Stripe API, PayPal API</li>
+                    </ul>
+                </div>
+                
+                <div class="timeline-item">
+                    <h4>Frontend Developer</h4>
+                    <h5>Swan Investment</h5>
+                    <p class="text-muted">Nov 2023 - Jan 2024</p>
+                    <ul>
+                        <li>Worked on Wealth and Broker platforms for investment management</li>
+                        <li>Developed responsive UIs with React and Redux</li>
+                        <li>Integrated real-time data feeds for financial analytics</li>
+                    </ul>
+                </div>
+                
+                <div class="timeline-item">
+                    <h4>ERP System Developer</h4>
+                    <h5>Endless Operations</h5>
+                    <p class="text-muted">Apr 2024 - Dec 2024</p>
+                    <ul>
+                        <li>Managed vendors, customers, and product stock management systems</li>
+                        <li>Oversaw manufacturing workflows and inventory control</li>
+                        <li>Handled payment processing and financial tracking</li>
+                        <li>Technologies: Node.js, MySQL, React, Redux</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Featured Projects</h2>
+            
+            <ul class="nav nav-pills mb-4 justify-content-center" id="project-tabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="financial-tab" data-bs-toggle="pill" data-bs-target="#financial" type="button">Financial</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="erp-tab" data-bs-toggle="pill" data-bs-target="#erp" type="button">ERP Systems</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="realtime-tab" data-bs-toggle="pill" data-bs-target="#realtime" type="button">Real-Time Apps</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="other-tab" data-bs-toggle="pill" data-bs-target="#other" type="button">Other Projects</button>
+                </li>
+            </ul>
+            
+            <div class="tab-content" id="project-tabs-content">
+                <div class="tab-pane fade show active" id="financial" role="tabpanel">
+                    <div class="row row-cols-1 row-cols-md-2 g-4">
+                        <div class="col">
+                            <div class="card project-card h-100">
+                                <div class="iframe-container">
+                                    <iframe src="https://wealth.swaninvestment.in/" title="Wealth Management Platform"></iframe>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Wealth Management Platform</h5>
+                                    <p class="card-text">Comprehensive wealth management solution with investment tracking and analytics.</p>
+                                    <p><strong>Tech Stack:</strong> React, Node.js, MongoDB</p>
+                                    <a href="https://wealth.swaninvestment.in/" class="btn btn-primary" target="_blank">Live Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card project-card h-100">
+                                <div class="iframe-container">
+                                    <iframe src="https://broker.swaninvestment.in/" title="Trading Platform"></iframe>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Trading Platform</h5>
+                                    <p class="card-text">Brokerage platform with real-time market data and trading capabilities.</p>
+                                    <p><strong>Tech Stack:</strong> React, Redux, Firebase</p>
+                                    <a href="https://broker.swaninvestment.in/" class="btn btn-primary" target="_blank">Live Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-pane fade" id="erp" role="tabpanel">
+                    <div class="row row-cols-1 row-cols-md-2 g-4">
+                        <div class="col">
+                            <div class="card project-card h-100">
+                                <div class="iframe-container">
+                                    <iframe src="https://endlesstest.a2logicgroup.com/" title="ERP System"></iframe>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Endless ERP System</h5>
+                                    <p class="card-text">Comprehensive enterprise resource planning system for business operations.</p>
+                                    <p><strong>Tech Stack:</strong> React, Redux, Node.js, Express, MySQL</p>
+                                    <a href="https://endlesstest.a2logicgroup.com/" class="btn btn-primary" target="_blank">Live Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-pane fade" id="realtime" role="tabpanel">
+                    <div class="row row-cols-1 row-cols-md-2 g-4">
+                        <div class="col">
+                            <div class="card project-card h-100">
+                                <div class="iframe-container">
+                                    <iframe src="https://mithleshprasad.github.io/chat-app/" title="Chat Application"></iframe>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Real-Time Chat App</h5>
+                                    <p class="card-text">Instant messaging application with Socket.io for real-time communication.</p>
+                                    <p><strong>Tech Stack:</strong> Node.js, Express, Socket.io</p>
+                                    <a href="https://mithleshprasad.github.io/chat-app/" class="btn btn-primary" target="_blank">Live Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card project-card h-100">
+                                <div class="iframe-container">
+                                    <iframe src="https://cricdekho.co.in/" title="Live Cricket Scores"></iframe>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">CricDekho</h5>
+                                    <p class="card-text">Live cricket score updates with real-time match statistics.</p>
+                                    <p><strong>Tech Stack:</strong> React, Third-party APIs</p>
+                                    <a href="https://cricdekho.co.in/" class="btn btn-primary" target="_blank">Live Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-pane fade" id="other" role="tabpanel">
+                    <div class="row row-cols-1 row-cols-md-2 g-4">
+                        <div class="col">
+                            <div class="card project-card h-100">
+                                <div class="iframe-container">
+                                    <iframe src="https://mithleshprasad.github.io/Learn-Coding/" title="Learn Coding"></iframe>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Learn Coding</h5>
+                                    <p class="card-text">Interactive platform for learning programming concepts.</p>
+                                    <p><strong>Tech Stack:</strong> HTML, JavaScript</p>
+                                    <a href="https://mithleshprasad.github.io/Learn-Coding/" class="btn btn-primary" target="_blank">Live Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card project-card h-100">
+                                <div class="iframe-container">
+                                    <iframe src="https://mithleshassistant.netlify.app/" title="Virtual Assistant"></iframe>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Mithlesh Assistant</h5>
+                                    <p class="card-text">AI-powered virtual assistant for task management.</p>
+                                    <p><strong>Tech Stack:</strong> React, Node.js</p>
+                                    <a href="https://mithleshassistant.netlify.app/" class="btn btn-primary" target="_blank">Live Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card project-card h-100">
+                                <div class="iframe-container">
+                                    <iframe src="https://razorpay-payment-gatway.onrender.com/" title="Payment Gateway"></iframe>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Razorpay Payment Gateway</h5>
+                                    <p class="card-text">Integration of Razorpay payment processing system.</p>
+                                    <p><strong>Tech Stack:</strong> Node.js, Express, Razorpay API</p>
+                                    <a href="https://razorpay-payment-gatway.onrender.com/" class="btn btn-primary" target="_blank">Live Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card project-card h-100">
+                                <div class="iframe-container">
+                                    <iframe src="https://aesthetic-hummingbird-6c9afa.netlify.app/" title="Ludo Game"></iframe>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Ludo Game</h5>
+                                    <p class="card-text">Interactive online Ludo game implementation.</p>
+                                    <p><strong>Tech Stack:</strong> React, Node.js, Socket.io</p>
+                                    <a href="https://aesthetic-hummingbird-6c9afa.netlify.app/" class="btn btn-primary" target="_blank">Live Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Education</h2>
+            
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">B.Tech in Information Technology</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Guru Ghasidas Vishwavidyalaya (Central University)</h6>
+                            <p class="card-text">Aug 2019 - May 2023</p>
+                            <p class="card-text">GPA: 7.46</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">12th Grade (BSEB)</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">SMD College, Jalalpur</h6>
+                            <p class="card-text">Jul 2018 - Mar 2019</p>
+                            <p class="card-text">Percentage: 69.2%</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">10th Grade (BSEB)</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">IM High School, Sasamusa</h6>
+                            <p class="card-text">Apr 2015 - May 2016</p>
+                            <p class="card-text">Percentage: 72.4%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GitHub Stats Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">GitHub Statistics</h2>
+            <div class="row text-center">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="https://github-readme-stats.vercel.app/api?username=mithleshprasad&show_icons=true&theme=dark" alt="GitHub Stats" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mithleshprasad&layout=compact&theme=dark" alt="Top Languages" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="https://github-readme-streak-stats.herokuapp.com/?user=mithleshprasad&theme=dark" alt="GitHub Streak" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Get In Touch</h2>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Contact Information</h5>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="bi bi-geo-alt-fill"></i> Goaplganj, Bihar, India</li>
+                                <li class="mb-2"><i class="bi bi-envelope-fill"></i> mithleshprasad58@gmail.com</li>
+                                <li class="mb-2"><i class="bi bi-phone-fill"></i> +91 7519024625</li>
+                                <li class="mb-2">
+                                    <i class="bi bi-github"></i> 
+                                    <a href="https://github.com/mithleshprasad" target="_blank">github.com/mithleshprasad</a>
+                                </li>
+                                <li class="mb-2">
+                                    <i class="bi bi-linkedin"></i> 
+                                    <a href="https://www.linkedin.com/in/mithlesh-prasad-5a68a41a3/" target="_blank">linkedin.com/in/mithlesh-prasad</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Send Me a Message</h5>
+                            <form id="contactForm">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="message" rows="3" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 text-center">
+        <div class="container">
+            <p class="mb-0">© 2023 Mithlesh Prasad. All rights reserved.</p>
+            <p class="mb-0">
+                <span id="visitorCount" class="badge bg-secondary">Loading visitor count...</span>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top btn btn-primary rounded-circle p-3">
+        <i class="bi bi-arrow-up"></i>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script>
+        // Back to top button
+        window.addEventListener('scroll', function() {
+            var backToTop = document.querySelector('.back-to-top');
+            if (window.pageYOffset > 300) {
+                backToTop.style.display = 'block';
+            } else {
+                backToTop.style.display = 'none';
+            }
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! I will get back to you soon.');
+            this.reset();
+        });
+
+        // Simulate visitor count (in a real implementation, you'd use an API)
+        setTimeout(() => {
+            document.getElementById('visitorCount').textContent = 'Visitors: 1,234';
+        }, 1000);
+    </script>
+</body>
+</html>
