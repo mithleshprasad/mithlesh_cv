@@ -231,6 +231,26 @@
             margin-bottom: 0.5rem;
         }
         
+        /* Iframe Container */
+        .iframe-container {
+            position: relative;
+            overflow: hidden;
+            padding-top: 56.25%; /* 16:9 Aspect Ratio */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            background: #f8f9fa;
+            margin-bottom: 1rem;
+        }
+        
+        .iframe-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
         /* Contact */
         .contact-card {
             background: white;
@@ -605,122 +625,358 @@
                     <button class="nav-link active" id="all-tab" data-bs-toggle="pill" data-bs-target="#all" type="button">All</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="web-tab" data-bs-toggle="pill" data-bs-target="#web" type="button">Web Apps</button>
-                </li>
-                <li class="nav-item" role="presentation">
                     <button class="nav-link" id="finance-tab" data-bs-toggle="pill" data-bs-target="#finance" type="button">Financial</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="realtime-tab" data-bs-toggle="pill" data-bs-target="#realtime" type="button">Real-Time</button>
+                    <button class="nav-link" id="games-tab" data-bs-toggle="pill" data-bs-target="#games" type="button">Games</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="tools-tab" data-bs-toggle="pill" data-bs-target="#tools" type="button">Tools</button>
                 </li>
             </ul>
             
             <div class="tab-content" id="project-tabs-content">
                 <div class="tab-pane fade show active" id="all" role="tabpanel">
                     <div class="row g-4">
+                        <!-- Wealth Management -->
                         <div class="col-md-6 col-lg-4 animate__animated animate__fadeIn">
                             <div class="card h-100">
-                                <img src="https://via.placeholder.com/600x400?text=Wealth+Management" class="card-img-top project-img" alt="Wealth Management">
                                 <div class="card-body">
                                     <h5 class="card-title">Wealth Management Platform</h5>
                                     <p class="card-text text-muted">Comprehensive investment tracking and analytics platform for financial management.</p>
-                                    <div class="mb-3">
-                                        <span class="tag">React</span>
-                                        <span class="tag">Node.js</span>
-                                        <span class="tag">MongoDB</span>
-                                        <span class="tag">Chart.js</span>
+                                    <div class="iframe-container">
+                                        <iframe src="https://wealth.swaninvestment.in/" title="Wealth Management Platform"></iframe>
                                     </div>
-                                    <a href="https://wealth.swaninvestment.in/" class="btn btn-sm btn-primary" target="_blank">Live Demo</a>
+                                    <div class="mt-3">
+                                        <div class="mb-3">
+                                            <span class="tag">React</span>
+                                            <span class="tag">Redux</span>
+                                            <span class="tag">Node.js</span>
+                                            <span class="tag">MongoDB</span>
+                                        </div>
+                                        <a href="https://wealth.swaninvestment.in/" class="btn btn-sm btn-primary" target="_blank">Live Demo</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         
+                        <!-- Broker Platform -->
                         <div class="col-md-6 col-lg-4 animate__animated animate__fadeIn animate-delay-1">
                             <div class="card h-100">
-                                <img src="https://via.placeholder.com/600x400?text=Broker+Platform" class="card-img-top project-img" alt="Broker Platform">
                                 <div class="card-body">
                                     <h5 class="card-title">Trading Platform</h5>
                                     <p class="card-text text-muted">Stock trading platform with real-time market data and analytics.</p>
-                                    <div class="mb-3">
-                                        <span class="tag">React</span>
-                                        <span class="tag">Redux</span>
-                                        <span class="tag">Firebase</span>
-                                        <span class="tag">WebSockets</span>
+                                    <div class="iframe-container">
+                                        <iframe src="https://broker.swaninvestment.in/" title="Broker Platform"></iframe>
                                     </div>
-                                    <a href="https://broker.swaninvestment.in/" class="btn btn-sm btn-primary" target="_blank">Live Demo</a>
+                                    <div class="mt-3">
+                                        <div class="mb-3">
+                                            <span class="tag">React</span>
+                                            <span class="tag">Redux</span>
+                                            <span class="tag">Firebase</span>
+                                            <span class="tag">WebSockets</span>
+                                        </div>
+                                        <a href="https://broker.swaninvestment.in/" class="btn btn-sm btn-primary" target="_blank">Live Demo</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         
+                        <!-- ERP System -->
                         <div class="col-md-6 col-lg-4 animate__animated animate__fadeIn animate-delay-2">
                             <div class="card h-100">
-                                <img src="https://via.placeholder.com/600x400?text=ERP+System" class="card-img-top project-img" alt="ERP System">
                                 <div class="card-body">
                                     <h5 class="card-title">ERP Management System</h5>
                                     <p class="card-text text-muted">Enterprise resource planning system for business operations management.</p>
-                                    <div class="mb-3">
-                                        <span class="tag">React</span>
-                                        <span class="tag">Redux</span>
-                                        <span class="tag">Node.js</span>
-                                        <span class="tag">MySQL</span>
+                                    <div class="iframe-container">
+                                        <iframe src="https://endlesstest.a2logicgroup.com/" title="ERP System"></iframe>
                                     </div>
-                                    <a href="https://endlesstest.a2logicgroup.com/" class="btn btn-sm btn-primary" target="_blank">Live Demo</a>
+                                    <div class="mt-3">
+                                        <div class="mb-3">
+                                            <span class="tag">React</span>
+                                            <span class="tag">Redux</span>
+                                            <span class="tag">Node.js</span>
+                                            <span class="tag">MySQL</span>
+                                        </div>
+                                        <a href="https://endlesstest.a2logicgroup.com/" class="btn btn-sm btn-primary" target="_blank">Live Demo</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         
+                        <!-- A3Adda -->
                         <div class="col-md-6 col-lg-4 animate__animated animate__fadeIn">
                             <div class="card h-100">
-                                <img src="https://via.placeholder.com/600x400?text=Chat+App" class="card-img-top project-img" alt="Chat App">
+                                <div class="card-body">
+                                    <h5 class="card-title">A3Adda Gaming Platform</h5>
+                                    <p class="card-text text-muted">Online gaming platform with Ludo, Aviator and other games.</p>
+                                    <div class="iframe-container">
+                                        <iframe src="https://a3adda.com/" title="A3Adda Gaming Platform"></iframe>
+                                    </div>
+                                    <div class="mt-3">
+                                        <div class="mb-3">
+                                            <span class="tag">React</span>
+                                            <span class="tag">Node.js</span>
+                                            <span class="tag">MongoDB</span>
+                                            <span class="tag">WebSockets</span>
+                                        </div>
+                                        <a href="https://a3adda.com/" class="btn btn-sm btn-primary" target="_blank">Live Demo</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Chat App -->
+                        <div class="col-md-6 col-lg-4 animate__animated animate__fadeIn animate-delay-1">
+                            <div class="card h-100">
                                 <div class="card-body">
                                     <h5 class="card-title">Real-Time Chat Application</h5>
                                     <p class="card-text text-muted">Instant messaging platform with Socket.io for real-time communication.</p>
-                                    <div class="mb-3">
-                                        <span class="tag">Node.js</span>
-                                        <span class="tag">Express</span>
-                                        <span class="tag">Socket.io</span>
-                                        <span class="tag">React</span>
+                                    <div class="iframe-container">
+                                        <iframe src="https://mithleshprasad.github.io/chat-app/" title="Chat Application"></iframe>
                                     </div>
-                                    <a href="https://mithleshprasad.github.io/chat-app/" class="btn btn-sm btn-primary" target="_blank">Live Demo</a>
+                                    <div class="mt-3">
+                                        <div class="mb-3">
+                                            <span class="tag">Node.js</span>
+                                            <span class="tag">Express</span>
+                                            <span class="tag">Socket.io</span>
+                                            <span class="tag">React</span>
+                                        </div>
+                                        <a href="https://mithleshprasad.github.io/chat-app/" class="btn btn-sm btn-primary" target="_blank">Live Demo</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         
-                        <div class="col-md-6 col-lg-4 animate__animated animate__fadeIn animate-delay-1">
-                            <div class="card h-100">
-                                <img src="https://via.placeholder.com/600x400?text=CricDekho" class="card-img-top project-img" alt="CricDekho">
-                                <div class="card-body">
-                                    <h5 class="card-title">CricDekho - Live Scores</h5>
-                                    <p class="card-text text-muted">Real-time cricket scores and match statistics platform.</p>
-                                    <div class="mb-3">
-                                        <span class="tag">React</span>
-                                        <span class="tag">API Integration</span>
-                                        <span class="tag">Live Updates</span>
-                                    </div>
-                                    <a href="https://cricdekho.co.in/" class="btn btn-sm btn-primary" target="_blank">Live Demo</a>
-                                </div>
-                            </div>
-                        </div>
-                        
+                        <!-- Learn Coding -->
                         <div class="col-md-6 col-lg-4 animate__animated animate__fadeIn animate-delay-2">
                             <div class="card h-100">
-                                <img src="https://via.placeholder.com/600x400?text=Learn+Coding" class="card-img-top project-img" alt="Learn Coding">
                                 <div class="card-body">
                                     <h5 class="card-title">Learn Coding</h5>
                                     <p class="card-text text-muted">Interactive platform for learning programming concepts.</p>
-                                    <div class="mb-3">
-                                        <span class="tag">HTML</span>
-                                        <span class="tag">JavaScript</span>
-                                        <span class="tag">CSS</span>
+                                    <div class="iframe-container">
+                                        <iframe src="https://mithleshprasad.github.io/Learn-Coding/" title="Learn Coding"></iframe>
                                     </div>
-                                    <a href="https://mithleshprasad.github.io/Learn-Coding/" class="btn btn-sm btn-primary" target="_blank">Live Demo</a>
+                                    <div class="mt-3">
+                                        <div class="mb-3">
+                                            <span class="tag">HTML</span>
+                                            <span class="tag">JavaScript</span>
+                                            <span class="tag">CSS</span>
+                                        </div>
+                                        <a href="https://mithleshprasad.github.io/Learn-Coding/" class="btn btn-sm btn-primary" target="_blank">Live Demo</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 
-                <!-- Other tab panes would follow the same structure -->
+                <!-- Financial Projects Tab -->
+                <div class="tab-pane fade" id="finance" role="tabpanel">
+                    <div class="row g-4">
+                        <!-- Wealth Management -->
+                        <div class="col-md-6 col-lg-4 animate__animated animate__fadeIn">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Wealth Management Platform</h5>
+                                    <p class="card-text text-muted">Comprehensive investment tracking and analytics platform for financial management.</p>
+                                    <div class="iframe-container">
+                                        <iframe src="https://wealth.swaninvestment.in/" title="Wealth Management Platform"></iframe>
+                                    </div>
+                                    <div class="mt-3">
+                                        <div class="mb-3">
+                                            <span class="tag">React</span>
+                                            <span class="tag">Redux</span>
+                                            <span class="tag">Node.js</span>
+                                            <span class="tag">MongoDB</span>
+                                        </div>
+                                        <a href="https://wealth.swaninvestment.in/" class="btn btn-sm btn-primary" target="_blank">Live Demo</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Broker Platform -->
+                        <div class="col-md-6 col-lg-4 animate__animated animate__fadeIn animate-delay-1">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Trading Platform</h5>
+                                    <p class="card-text text-muted">Stock trading platform with real-time market data and analytics.</p>
+                                    <div class="iframe-container">
+                                        <iframe src="https://broker.swaninvestment.in/" title="Broker Platform"></iframe>
+                                    </div>
+                                    <div class="mt-3">
+                                        <div class="mb-3">
+                                            <span class="tag">React</span>
+                                            <span class="tag">Redux</span>
+                                            <span class="tag">Firebase</span>
+                                            <span class="tag">WebSockets</span>
+                                        </div>
+                                        <a href="https://broker.swaninvestment.in/" class="btn btn-sm btn-primary" target="_blank">Live Demo</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Bababook -->
+                        <div class="col-md-6 col-lg-4 animate__animated animate__fadeIn animate-delay-2">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Bababook</h5>
+                                    <p class="card-text text-muted">Financial platform with third-party API integrations.</p>
+                                    <div class="iframe-container">
+                                        <iframe src="https://bababook24.com/" title="Bababook"></iframe>
+                                    </div>
+                                    <div class="mt-3">
+                                        <div class="mb-3">
+                                            <span class="tag">React</span>
+                                            <span class="tag">API Integration</span>
+                                            <span class="tag">Payment Gateway</span>
+                                        </div>
+                                        <a href="https://bababook24.com/" class="btn btn-sm btn-primary" target="_blank">Live Demo</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Games Projects Tab -->
+                <div class="tab-pane fade" id="games" role="tabpanel">
+                    <div class="row g-4">
+                        <!-- A3Adda -->
+                        <div class="col-md-6 col-lg-4 animate__animated animate__fadeIn">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">A3Adda Gaming Platform</h5>
+                                    <p class="card-text text-muted">Online gaming platform with Ludo, Aviator and other games.</p>
+                                    <div class="iframe-container">
+                                        <iframe src="https://a3adda.com/" title="A3Adda Gaming Platform"></iframe>
+                                    </div>
+                                    <div class="mt-3">
+                                        <div class="mb-3">
+                                            <span class="tag">React</span>
+                                            <span class="tag">Node.js</span>
+                                            <span class="tag">MongoDB</span>
+                                            <span class="tag">WebSockets</span>
+                                        </div>
+                                        <a href="https://a3adda.com/" class="btn btn-sm btn-primary" target="_blank">Live Demo</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Ludo Game -->
+                        <div class="col-md-6 col-lg-4 animate__animated animate__fadeIn animate-delay-1">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Ludo Game</h5>
+                                    <p class="card-text text-muted">Interactive online Ludo game implementation.</p>
+                                    <div class="iframe-container">
+                                        <iframe src="https://aesthetic-hummingbird-6c9afa.netlify.app/" title="Ludo Game"></iframe>
+                                    </div>
+                                    <div class="mt-3">
+                                        <div class="mb-3">
+                                            <span class="tag">React</span>
+                                            <span class="tag">Node.js</span>
+                                            <span class="tag">Socket.io</span>
+                                        </div>
+                                        <a href="https://aesthetic-hummingbird-6c9afa.netlify.app/" class="btn btn-sm btn-primary" target="_blank">Live Demo</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Learning Game -->
+                        <div class="col-md-6 col-lg-4 animate__animated animate__fadeIn animate-delay-2">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Learning Game</h5>
+                                    <p class="card-text text-muted">Educational game for interactive learning.</p>
+                                    <div class="iframe-container">
+                                        <iframe src="https://moonlit-smakager-2d0d10.netlify.app/" title="Learning Game"></iframe>
+                                    </div>
+                                    <div class="mt-3">
+                                        <div class="mb-3">
+                                            <span class="tag">React</span>
+                                            <span class="tag">Node.js</span>
+                                            <span class="tag">Firebase</span>
+                                        </div>
+                                        <a href="https://moonlit-smakager-2d0d10.netlify.app/" class="btn btn-sm btn-primary" target="_blank">Live Demo</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tools Projects Tab -->
+                <div class="tab-pane fade" id="tools" role="tabpanel">
+                    <div class="row g-4">
+                        <!-- PDF Reader -->
+                        <div class="col-md-6 col-lg-4 animate__animated animate__fadeIn">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">PDF Reader</h5>
+                                    <p class="card-text text-muted">PDF reader application with text extraction capabilities.</p>
+                                    <div class="iframe-container">
+                                        <iframe src="https://mithleshprasad.github.io/pdf_reader_jarvis/" title="PDF Reader"></iframe>
+                                    </div>
+                                    <div class="mt-3">
+                                        <div class="mb-3">
+                                            <span class="tag">JavaScript</span>
+                                            <span class="tag">PDF.js</span>
+                                            <span class="tag">HTML5</span>
+                                        </div>
+                                        <a href="https://mithleshprasad.github.io/pdf_reader_jarvis/" class="btn btn-sm btn-primary" target="_blank">Live Demo</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Kanban Board -->
+                        <div class="col-md-6 col-lg-4 animate__animated animate__fadeIn animate-delay-1">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Kanban Board</h5>
+                                    <p class="card-text text-muted">Task management board with drag-and-drop functionality.</p>
+                                    <div class="iframe-container">
+                                        <iframe src="https://thunderous-dragon-a6e31d.netlify.app/" title="Kanban Board"></iframe>
+                                    </div>
+                                    <div class="mt-3">
+                                        <div class="mb-3">
+                                            <span class="tag">React</span>
+                                            <span class="tag">Drag-and-Drop</span>
+                                            <span class="tag">Local Storage</span>
+                                        </div>
+                                        <a href="https://thunderous-dragon-a6e31d.netlify.app/" class="btn btn-sm btn-primary" target="_blank">Live Demo</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Razorpay Payment -->
+                        <div class="col-md-6 col-lg-4 animate__animated animate__fadeIn animate-delay-2">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Razorpay Payment Gateway</h5>
+                                    <p class="card-text text-muted">Payment processing integration with Razorpay.</p>
+                                    <div class="iframe-container">
+                                        <iframe src="https://razorpay-payment-gatway.onrender.com/" title="Razorpay Payment"></iframe>
+                                    </div>
+                                    <div class="mt-3">
+                                        <div class="mb-3">
+                                            <span class="tag">Node.js</span>
+                                            <span class="tag">Express</span>
+                                            <span class="tag">Razorpay API</span>
+                                        </div>
+                                        <a href="https://razorpay-payment-gatway.onrender.com/" class="btn btn-sm btn-primary" target="_blank">Live Demo</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
