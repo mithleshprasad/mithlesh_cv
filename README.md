@@ -1,7 +1,5 @@
 # Mithlesh Prasad - Portfolio
 
-![Portfolio Screenshot](https://i.imgur.com/sample-image.jpg)
-
 A modern, responsive portfolio website showcasing my projects, skills, and experience as a Full Stack Developer.
 
 ## 🚀 Features
@@ -36,18 +34,6 @@ A modern, responsive portfolio website showcasing my projects, skills, and exper
 - Postman
 - Figma
 
-## 📂 Project Structure
-
-```
-portfolio/
-├── index.html          # Main HTML file
-├── assets/
-│   ├── css/            # CSS stylesheets
-│   ├── js/             # JavaScript files
-│   └── images/         # Project images
-├── projects/           # Project showcase data
-└── README.md           # This file
-```
 
 ## 🖥️ Live Demo
 
